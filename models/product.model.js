@@ -14,7 +14,7 @@ const productSchema = new Schema({
         required: true,
         trim: true,
         minLength: [5, 'La descripcion debe tener al menos 5 caracteres'], 
-        maxLength: [500, 'La descripcion debe tener maximo 500 caracteres'] 
+        maxLength: [2500, 'La descripcion debe tener maximo 2500 caracteres'] 
     },
     price: {
         type: Number,
