@@ -58,7 +58,7 @@ const upload = multer({
     }
 }).single('image')
 
-// Middleware mejorado con manejo de errores
+// Middleware con manejo de errores
 const uploadMiddleware = (req, res, next) => {
     upload(req, res, function(err) {
         if (err instanceof multer.MulterError) {
