@@ -12,7 +12,7 @@ router.get('/products/:id', porductController.getProductById)
 router.post('/products', upload, porductController.createProduct)
 
 //# Ruta para eliminar un producto por ID
-router.delete('/products/:id', porductController.deleteProductById)
+router.delete('/products/:id', upload, porductController.deleteProductById)
 
 //# Ruta para actualizar un producto por ID
 router.put('/products/:id', upload, porductController.updateProductById)
